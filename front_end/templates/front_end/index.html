@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django React Integration</title>
+    {% csrf_token %}
+</head>
+<body>
+    <div id="root">
+        <!-- React will be mounted here -->
+    </div>
+    <script src="{% static 'frontend/main.js' %}"></script>
+</body>
+</html>
